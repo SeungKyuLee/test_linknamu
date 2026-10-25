@@ -12,8 +12,8 @@ export type Profile = {
 };
 
 export const profile: Profile = {
-  name: "홍길동",
-  bio: "개발하고 글 쓰는 사람",
+  name: "이승규",
+  bio: "백엔드 서버 개발에 흥미를 가지는 사람 | 컴퓨터 공학에 관심이 많은 사람",
 };
 
 export const links: Link[] = [
