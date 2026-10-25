@@ -1,7 +1,10 @@
+export type LinkIcon = "github" | "naver-blog";
+
 export type Link = {
   id: string;
   title: string;
   url: string;
+  icon?: LinkIcon;
 };
 
 export type Profile = {
@@ -17,7 +20,6 @@ export const profile: Profile = {
 };
 
 export const links: Link[] = [
-  { id: "github", title: "GitHub", url: "https://github.com" },
-  { id: "blog", title: "블로그", url: "https://velog.io" },
-  { id: "instagram", title: "Instagram", url: "https://instagram.com" },
+  { id: "github", title: "GitHub", url: "https://github.com/SeungKyuLee", icon: "github" },
+  { id: "blog", title: "블로그", url: "https://blog.naver.com/lsk2da", icon: "naver-blog" },
 ];
