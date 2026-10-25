@@ -2,20 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 색상은 RGB 채널로 정의해 Tailwind 투명도 표기(text-foreground/60 등)가 동작하게 한다 */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground: 46 38 33;
+  --background: 250 243 236;
+  --gradient: linear-gradient(165deg, #fdf8f3 0%, #f9ebdf 45%, #f4ddd4 100%);
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --foreground: 240 232 225;
+  --background: 28 23 20;
+  --gradient: linear-gradient(165deg, #1f1a17 0%, #2a201b 50%, #33241f 100%);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground));
+  background-color: rgb(var(--background));
+  background-image: var(--gradient);
+  background-attachment: fixed;
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    sans-serif;
+  word-break: keep-all;
 }
 
 @layer utilities {
